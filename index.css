@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+fieldset {
+    border: 0;
+}
+
+section input[type="text"] {
+    width: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+section button[type="submit"] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+main .result-box {
+    width: 50%;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main a:link,
+main a:visited {
+    color: #000;
+}
+
