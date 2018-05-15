@@ -12,24 +12,50 @@
         <title>The Best Sketch Plugins</title>
     </head>
     <body>
-        <header role="banner">
-            <h1>The Best Sketch plugins</h1>
-        </header>
+        <div class="container">
+            <header role="banner">
+                <h1>The Best Sketch plugins</h1>
+            </header>
 
-        <section role="region">
-            <form action="#" method="/" name="github-search" class="js-search-form">
-                <fieldset>
-                    <legend>
-                        <label for="query">Enter a category sketch plugin you're looking for</label>
-                        <input type="text" class="js-query" required>
-                        <button type="submit">Search</button>
-                    </legend>
-                </fieldset>
-            </form>
-        </section>
+            <section role="region">
+                <form action="#" method="/" name="github-search" class="js-search-form">
+                    <fieldset>
+                        <legend>
+                            <label for="query">Enter a category sketch plugin you're looking for</label>
+                            <input type="text" class="js-query" placeholder="type colors, fonts, layout, responsive" required>
+                            <button type="submit">Search</button>
+                        </legend>
+                    </fieldset>
+                </form>
+            </section>
 
-        <main role="main" class="js-search-results" aria-live="assertive"></main>
+            <main role="main" class="js-search-results" aria-live="assertive"></main>
+            <section role="region" class="js-load-more-btn"></section>
 
+            <section role="region" id="medium-section">
+                <div class="medium-section-heading"><h3>Top Stories on <span>Design + Sketch</h3></span></div>
+                    <div class="row js-medium-article-results">
+
+                    </div>
+            </section>
+
+            <section role="region" id="twitter-section">
+                <div class="twitter-section-heading"><h3>Top Tweets <span>Sketch Plugins</h3></span></div>
+                    <div class="row js-twitter-article-results">
+                        <div class="twitter-result-box">
+                            <h4>${tweet.title}</h4>
+                        </div>
+                        <div class="twitter-result-box">
+                            <h4>${tweet.title}</h4>
+                        </div>
+                        <div class="twitter-result-box">
+                            <h4>${tweet.title}</h4>
+                        </div>
+                    </div>
+            </section>
+
+        </div><!-- closes .container -->
+        <script src="medium.js"></script>
         <script src="index.js"></script>
     </body>
 </html> 
