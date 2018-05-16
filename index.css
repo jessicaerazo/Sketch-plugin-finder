@@ -173,20 +173,42 @@ main .download-link: focus {
 
 #twitter-section .twitter-result-box {
     width: 341.33px;
-    height: 250px;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     margin-right: 15px;
-    padding: 10px;
+    padding: 20px;
+    text-align: left;
 }
 
 #twitter-section .twitter-result-box:last-child {
     margin-right: 0;
 }
 
+.avatar {
+    /* width: 48px; */
+    height: 45px;
+    padding: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #d8d8d8;
+}
+
 #twitter-section .twitter-result-box h4 {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#twitter-section .twitter-result-box p {
     font-weight: 400;
+    margin-bottom: 15px;
+    color: #1DA1F2;
+}
+
+#twitter-section .twitter-result-box .date {
+    font-weight: 400;
+    margin: 0;
+    color: #999;
 }
 
 .load-more-btn {
