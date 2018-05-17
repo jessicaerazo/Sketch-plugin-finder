@@ -36,23 +36,6 @@ function getTwitterDataFromAPI(callback) {
       });
 }
 
-function getGitHubDataFromAPI(searchTerm, callback) {
-    const endpoint = GITHUB_ENDPOINT + " " + searchTerm;
-    $.getJSON(endpoint, callback).fail();
-}
-
-function showErr(err) {
-    const outputElem = $('.js-output');
-    
-    const errMsg = (
-      `<p>We couldn't find a user with that screenname!`
-    );
-      
-    outputElem
-      .prop('hidden', false)
-      .html(errMsg);
-  }
-
 function renderResult(result) {
     const downloadLink = result.html_url + "/archive/master.zip";
     return `
@@ -67,8 +50,31 @@ function renderResult(result) {
 
 function displayGitHubSearchData(data) {
     const results = data.items.map((item,index) => renderResult(item));
-    $('.js-search-results').html(results);
+    if(data.total_count !== 0){
+        $('.js-search-results').html(results);
+    }
+    else {
+        console.log("no search term found");
+        $('.js-search-results').html("<p class=\"fail-statement\">Sorry, no results were found. Please try searching again.</p>");
+    }
+    
 }
+
+
+function getGitHubDataFromAPI(searchTerm, callback) {
+    const endpoint = GITHUB_ENDPOINT + " " + searchTerm;
+    $.getJSON(endpoint, callback).fail(showErr);
+}
+
+function showErr(err) {
+    
+    const errMsg = (
+      `<p>Sorry no results found. Try another search term.</p`
+    );
+      console.log(errMsg);
+    $('.js-search-results').html(errMsg);
+  }
+
 
 function watchSubmit() {
     $('.js-search-form').submit(event => {
@@ -77,6 +83,7 @@ function watchSubmit() {
         const query = queryTarget.val();
         queryTarget.val("");
         getGitHubDataFromAPI(query, displayGitHubSearchData);
+  
     });
 }
 

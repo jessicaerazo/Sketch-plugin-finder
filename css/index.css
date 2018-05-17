@@ -46,8 +46,8 @@ header img {
 #search-section label {
     display: block;
     margin-bottom: 25px;
-    font-weight: 300;
-    color: #999;
+    font-weight: 400;
+    color: #5B59E2;
 }
 
 #search-section input[type="text"] {
@@ -82,6 +82,12 @@ header img {
     padding: 0 5%;
     border-radius: 5px;
     border: 1px solid #d8d8d8;
+}
+
+.search-results .fail-statement {
+    color: #999;
+    text-align: center;
+    margin: 40px 0;
 }
 
 main .result-box {
@@ -245,7 +251,6 @@ footer {
         box-shadow: 0;
     }
     
-
     #search-section button[type="submit"] {
         font-family: 'Open Sans', sans-serif;
         color: #505050;
@@ -254,6 +259,12 @@ footer {
         padding: 0 5%;
         border-radius: 5px;
         border: 1px solid #d8d8d8;
+    }
+
+    .search-results .fail-statement {
+        color: #999;
+        text-align: center;
+        margin: 80px 0;
     }
     
 }
