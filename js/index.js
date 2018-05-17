@@ -26,8 +26,7 @@ function displayTwitterSearchData(data) {
 
 function getTwitterDataFromAPI(callback) {
     $.ajax({
-        // url: `${CORS_ANYWHERE_ENDPOINT}${TWITTER_SEARCH_ENDPOINT}`,
-        url: `${TWITTER_SEARCH_ENDPOINT}`,
+        url: `${CORS_ANYWHERE_ENDPOINT}${TWITTER_SEARCH_ENDPOINT}`,
         headers: {
             'Authorization':'Bearer AAAAAAAAAAAAAAAAAAAAAImG6AAAAAAAB7UAoiVD%2FGjqAi4m0Jlb7bZWJdw%3D3eEzplSsumJF2khW4zXBzqDYvAxtW7dLk2jmygHHBgBbwqwiSv'
         },

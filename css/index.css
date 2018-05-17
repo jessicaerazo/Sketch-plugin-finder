@@ -280,7 +280,7 @@ main .download-link: focus {
         border: 1px solid #d8d8d8;
         border-radius: 5px;
         margin-right: 15px;
-        padding: 30px;
+        padding: 40px 30px;
         text-align: left;
     }
     
