@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    margin: 40px 0 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+header img {
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+#search-section  {
+    text-align: center;
+}
+
+#search-section fieldset, 
+#search-section legend {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#search-section label {
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 300;
+    color: #999;
+}
+
+#search-section input[type="text"] {
+    width: 65%;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    box-shadow: 0;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color:#d8d8d8;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color:#d8d8d8;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color:#d8d8d8;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color:#d8d8d8;
+  }
+
+  #search-section button[type="submit"] {
+    font-family: 'Open Sans', sans-serif;
+    color: #505050;
+    font-size: 16px;
+    height: 40px;
+    padding: 0 5%;
+    border-radius: 5px;
+    border: 1px solid #d8d8d8;
+}
+
+main .result-box {
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    padding: 25px;
+    margin: 25px 0;
+}
+
+main a {
+    text-decoration: none;
+}
+
+main .sketch-title,
+main .sketch-description {
+    color: #000;
+}
+
+main .download-link {
+    color: #5B59E2;
+}
+
+main .download-link:hover {
+    color: rgb(104, 104, 247);
+}
+
+
+main .download-link:active,
+main .download-link: focus {
+    color: rgb(104, 104, 247);
+}
+
+/* Styling twitter section */
+#twitter-section {
+    margin-top: 40px;
+}
+
+#twitter-section .twitter-section-heading {
+    margin: 15px 0;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+#twitter-section .twitter-section-heading h3{
+    padding: 0 0 15px 0;
+    text-align: left;
+}
+
+#twitter-section .twitter-section-heading h3 > span {
+    color: #F96401;
+}
+
+#twitter-section .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    align-content: center;
+}
+
+#twitter-section .twitter-result-box {
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    /* margin-right: 15px; */
+    padding: 30px;
+    text-align: left;
+}
+
+#twitter-section .twitter-result-box:last-child {
+    margin-right: 0;
+}
+
+#twitter-section .avatar {
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#twitter-section .twitter-result-box h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+#twitter-section .twitter-result-box p {
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #1DA1F2;
+}
+
+#twitter-section .twitter-result-box .date {
+    font-weight: 400;
+    margin: 0;
+    color: #505050;
+}
+
+/* Media Query */
+@media only screen and (min-width: 375px) {
+    header img {
+        width: 29%;
+        margin-bottom: 15px;
+    }
+
+    #search-section input[type="text"] {
+        width: 72%;
+        height: 40px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        padding-left: 15px;
+        border: 1px solid #d8d8d8;
+        border-radius: 5px;
+        box-shadow: 0;
+    }
+    
+
+    #search-section button[type="submit"] {
+        font-family: 'Open Sans', sans-serif;
+        color: #505050;
+        font-size: 16px;
+        height: 40px;
+        padding: 0 5%;
+        border-radius: 5px;
+        border: 1px solid #d8d8d8;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) {
+    header h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    header img {
+        width: 30%;
+        margin-bottom: 15px;
+    }
+
+    #search-section input[type="text"] {
+        width: 81%;
+        height: 40px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        padding-left: 15px;
+        border: 1px solid #d8d8d8;
+        border-radius: 5px;
+        box-shadow: 0;
+    }
+    
+
+    #search-section button[type="submit"] {
+        font-family: 'Open Sans', sans-serif;
+        color: #505050;
+        font-size: 16px;
+        height: 40px;
+        padding: 0 5%;
+        border-radius: 5px;
+        border: 1px solid #d8d8d8;
+    }
+    
+}
+@media only screen and (min-width: 1024px) {
+    header img {
+        margin-bottom: 30px;
+    }
+
+    #search-section input[type="text"] {
+        width: 84%;
+        height: 40px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        padding-left: 15px;
+        border: 1px solid #d8d8d8;
+        border-radius: 5px;
+        box-shadow: 0;
+    }
+    
+
+    #search-section button[type="submit"] {
+        font-family: 'Open Sans', sans-serif;
+        color: #505050;
+        font-size: 16px;
+        height: 40px;
+        padding: 0 5%;
+        border-radius: 5px;
+        border: 1px solid #d8d8d8;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    #twitter-section .row {
+        flex-wrap: nowrap;
+    }
+    
+    #twitter-section .twitter-result-box {
+        border: 1px solid #d8d8d8;
+        border-radius: 5px;
+        margin-right: 15px;
+        padding: 30px;
+        text-align: left;
+    }
+    
+}
+
+
+

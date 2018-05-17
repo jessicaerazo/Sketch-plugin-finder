@@ -3,20 +3,14 @@
 const GITHUB_ENDPOINT = 'https://api.github.com/search/repositories?per_page=10&page=2&q=sketch%20plugin';
 const TWITTER_SEARCH_ENDPOINT = 'https://api.twitter.com/1.1/search/tweets.json?q=sketch%20plugins&result_type=recent&count=3';
 const CORS_ANYWHERE_ENDPOINT ='https://cors-anywhere.herokuapp.com/';
-const UNSPLASH_API = 'https://api.unsplash.com/search/photos?client_id=61c72014dbe50b21aba0ddd4947f988fbb991323387b4d1441cf6fabe0b2947c&page=1&query=profile&per_page=3';
-
-
-
-function getUnsplashDataFromAPI(callback) {
-    $(ajax)
-}
-
 
 
 function renderTwitterResult(result) {
     return `
-    <div class="twitter-result-box row">
-        <div class="avatar"></div>
+    
+    <div class="twitter-result-box row js-twitter-result-box">
+    <img src="${result.user.profile_image_url}" alt="" class="avatar">
+       <div class="profile-image-container"></div>
         <div class="tweet">
             <h4>${result.user.name}</h4>
             <p>${result.text}</p>
@@ -25,6 +19,10 @@ function renderTwitterResult(result) {
     </div>`;
 }
 
+function displayTwitterSearchData(data) {
+    const TwitterResults = data.statuses.map((item, index) => renderTwitterResult(item));
+    $('.js-twitter-results').html(TwitterResults);
+  }
 
 function getTwitterDataFromAPI(callback) {
     $.ajax({
@@ -37,11 +35,6 @@ function getTwitterDataFromAPI(callback) {
         success: callback
       });
 }
-
-function displayTwitterSearchData(data) {
-    const TwitterResults = data.statuses.map((item, index) => renderTwitterResult(item));
-    $('.js-twitter-results').html(TwitterResults);
-  }
 
 function getGitHubDataFromAPI(searchTerm, callback) {
     const endpoint = GITHUB_ENDPOINT + " " + searchTerm;
@@ -63,7 +56,6 @@ function renderResult(result) {
 function displayGitHubSearchData(data) {
     const results = data.items.map((item,index) => renderResult(item));
     $('.js-search-results').html(results);
-    //$('.js-load-more-btn').html('<div class="load-btn">load more</div>');
 }
 
 function watchSubmit() {
@@ -76,20 +68,6 @@ function watchSubmit() {
     });
 }
 
-function displayMediumArticle(MEDIUM_DATA) {
-   const mediumResult = MEDIUM_DATA.map((item, index) => renderMediumArticles(item));
-   $('.js-medium-article-results').html(mediumResult);
-
-}
-
-function renderMediumArticles(article) {
-    return `
-    <div class="medium-result-box">
-        <h4>${article.articleName}</h4>
-    </div>`;
-}
-
-
 function renderTweets(tweet) {
     return `
     <div class="twitter-result-box">
@@ -99,7 +77,6 @@ function renderTweets(tweet) {
 
 function initalizeApp() {
     getTwitterDataFromAPI(displayTwitterSearchData);
-    displayMediumArticle(MEDIUM_DATA);
     watchSubmit();
 }
 
