@@ -8,13 +8,13 @@
         <meta name="author" content="Jessica Erazo">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <title>The Best Sketch Plugins</title>
     </head>
     <body>
         <div class="container">
             <header role="banner">
-                <h1>The Best Sketch plugins</h1>
+                <h1>Sketch Plugins make Sketch better.</h1>
+                <p>Sketch is a digital design toolkit built to help you create your best work. Sketch Plugins enable you to add more functionality.</p>
                 <img src="img/sketch.png" alt="sketch app">
             </header>
 
@@ -23,7 +23,7 @@
                     <fieldset>
                         <legend>
                             <div class="input-container">
-                                <label for="query">Enter a category sketch plugin you're looking for</label>
+                                <label for="query">Find a sketch plugin by category</label>
                                 <input type="text" class="js-query" placeholder="type colors, fonts" required>
                                 <button type="submit">Search</button>
                             </div>
@@ -32,15 +32,24 @@
                 </form>
             </section>
 
-            <main role="main" class="js-search-results search-results" aria-live="assertive"></main>
+            <main role="main" class="js-search-results search-results" aria-live="assertive">
+                <!-- github results will load here -->
+            </main>
             <section role="region" id="twitter-section">
-                <div class="twitter-section-heading"><h3>Top recent Tweets for <span>Sketch Plugins</h3></span></div>
-                    <div class="row js-twitter-results">
-                        
-                    </div>
+                <div class="twitter-section-heading">
+                    <h3>Top recent Tweets for <span>Sketch Plugins</span></h3>
+                </div>
+                <div class="row js-twitter-results">
+                    <!-- twitter results will load here -->
+                </div>
             </section>
         </div><!-- closes .container -->
-        <footer role="contentinfo">&copy; Jessica Erazo</footer>
+
+        <footer role="contentinfo">
+            &copy; Jessica Erazo
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/moment.js"></script>
         <script src="js/index.js"></script>
     </body>

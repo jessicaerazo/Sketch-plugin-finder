@@ -17,22 +17,28 @@ body {
 }
 
 header {
-    margin: 40px 0 15px 0;
     text-align: center;
 }
 
 header h1 {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+header p {
+    color: #505050;
+    margin-bottom: 50px;
 }
 
 header img {
     width: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 100px;
 }
 
 #search-section  {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #search-section fieldset, 
@@ -200,31 +206,63 @@ footer {
 
 /* Media Query */
 @media only screen and (min-width: 375px) {
+    header h1 {
+        font-size: 36px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    
+    header p {
+        color: #505050;
+        margin-bottom: 50px;
+    }
+
     header img {
-        width: 29%;
-        margin-bottom: 15px;
+        width: 60%;
+        margin-bottom: 100px;
     }
 
     #search-section input[type="text"] {
         width: 72%;
-        height: 40px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        padding-left: 15px;
-        border: 1px solid #d8d8d8;
-        border-radius: 5px;
-        box-shadow: 0;
     }
     
+}
 
-    #search-section button[type="submit"] {
-        font-family: 'Open Sans', sans-serif;
+@media only screen and (min-width: 414px) {
+    body{
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 40px;
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    
+    header p {
         color: #505050;
-        font-size: 16px;
-        height: 40px;
-        padding: 0 5%;
-        border-radius: 5px;
-        border: 1px solid #d8d8d8;
+        margin-bottom: 50px;
+    }
+
+    header img {
+        width: 40%;
+        margin-bottom: 100px;
+    }
+
+    #search-section label {
+        display: block;
+        margin-bottom: 25px;
+        font-weight: 400;
+        color: #5B59E2;
+    }
+
+    #search-section input[type="text"] {
+        width: 72%;
+        font-size: 18px;
+    }
+    
+    #search-section button[type="submit"] {
+        font-size: 18px;
     }
     
 }
@@ -232,35 +270,19 @@ footer {
 @media only screen and (min-width: 768px) {
     header h1 {
         font-size: 32px;
-        margin-bottom: 15px;
+        margin-top:40px;
+        margin-bottom: 40px;
     }
     
     header img {
         width: 30%;
-        margin-bottom: 15px;
+        margin-bottom: 100px;
     }
 
     #search-section input[type="text"] {
         width: 81%;
-        height: 40px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        padding-left: 15px;
-        border: 1px solid #d8d8d8;
-        border-radius: 5px;
-        box-shadow: 0;
     }
     
-    #search-section button[type="submit"] {
-        font-family: 'Open Sans', sans-serif;
-        color: #505050;
-        font-size: 16px;
-        height: 40px;
-        padding: 0 5%;
-        border-radius: 5px;
-        border: 1px solid #d8d8d8;
-    }
-
     .search-results .fail-statement {
         color: #999;
         text-align: center;
@@ -269,30 +291,29 @@ footer {
     
 }
 @media only screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 45px;
+        margin-top: 140px;
+        margin-bottom: 80px;
+    }
+    
+    header p {
+        color: #505050;
+        margin-bottom: 100px;
+    }
+
     header img {
-        margin-bottom: 30px;
+        width: 30%;
+        margin-bottom: 100px;
+    }
+
+    header img {
+        margin-bottom: 100px;
+
     }
 
     #search-section input[type="text"] {
-        width: 84%;
-        height: 40px;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 16px;
-        padding-left: 15px;
-        border: 1px solid #d8d8d8;
-        border-radius: 5px;
-        box-shadow: 0;
-    }
-    
-
-    #search-section button[type="submit"] {
-        font-family: 'Open Sans', sans-serif;
-        color: #505050;
-        font-size: 16px;
-        height: 40px;
-        padding: 0 5%;
-        border-radius: 5px;
-        border: 1px solid #d8d8d8;
+        width: 83%;
     }
 }
 
@@ -308,8 +329,8 @@ footer {
         margin-right: 15px;
         padding: 40px 30px;
         text-align: left;
-    }
-    
+        height: 330px;
+    } 
 }
 
 
