@@ -29,7 +29,7 @@ function getTwitterDataFromAPI(callback) {
         headers: {
             'Authorization':'Bearer AAAAAAAAAAAAAAAAAAAAAImG6AAAAAAAB7UAoiVD%2FGjqAi4m0Jlb7bZWJdw%3D3eEzplSsumJF2khW4zXBzqDYvAxtW7dLk2jmygHHBgBbwqwiSv'
         },
-        dataType: 'GET',
+        type: 'GET',
         dataType: 'json',
         success: callback
       });
@@ -53,7 +53,6 @@ function displayGitHubSearchData(data) {
         $('.js-search-results').html(results);
     }
     else {
-        console.log("no search term found");
         $('.js-search-results').html("<p class=\"fail-statement\">Sorry, no results were found. Please try searching again.</p>");
     }
 }
@@ -67,7 +66,7 @@ function showErr(err) {
     const errMsg = (
       `<p>Sorry no results found. Try another search term.</p`
     );
-      console.log(errMsg);
+
     $('.js-search-results').html(errMsg);
 }
 

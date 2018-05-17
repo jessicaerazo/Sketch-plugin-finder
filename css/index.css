@@ -293,23 +293,18 @@ footer {
 @media only screen and (min-width: 1024px) {
     header h1 {
         font-size: 45px;
-        margin-top: 140px;
-        margin-bottom: 80px;
+        margin-top: 80px;
+        margin-bottom: 40px;
     }
     
     header p {
         color: #505050;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
     }
 
     header img {
         width: 30%;
-        margin-bottom: 100px;
-    }
-
-    header img {
-        margin-bottom: 100px;
-
+        margin-bottom: 40px;
     }
 
     #search-section input[type="text"] {
@@ -319,6 +314,12 @@ footer {
 
 
 @media only screen and (min-width: 1025px) {
+
+    #search-section  {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
     #twitter-section .row {
         flex-wrap: nowrap;
     }
@@ -329,7 +330,7 @@ footer {
         margin-right: 15px;
         padding: 40px 30px;
         text-align: left;
-        height: 330px;
+        height: 350px;
     } 
 }
 
