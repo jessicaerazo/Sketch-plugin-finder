@@ -142,21 +142,24 @@ main .download-link: focus {
 }
 
 #twitter-section .twitter-result-box {
+    width: 100%;
+    height: 310px;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
-    /* margin-right: 15px; */
     padding: 30px;
     text-align: left;
 }
 
 #twitter-section .twitter-result-box:last-child {
     margin-right: 0;
+    margin-bottom: 60px;
 }
 
 #twitter-section .avatar {
     height: 45px;
     border-radius: 50%;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 #twitter-section .twitter-result-box h4 {
@@ -175,6 +178,18 @@ main .download-link: focus {
     font-weight: 400;
     margin: 0;
     color: #505050;
+}
+
+footer {
+    background: #F8F8FB;
+    border-top: 1px solid #d8d8d8;
+    color: #959597;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding-top: 19px;
 }
 
 /* Media Query */

@@ -38,8 +38,20 @@ function getTwitterDataFromAPI(callback) {
 
 function getGitHubDataFromAPI(searchTerm, callback) {
     const endpoint = GITHUB_ENDPOINT + " " + searchTerm;
-    $.getJSON(endpoint, callback);
+    $.getJSON(endpoint, callback).fail();
 }
+
+function showErr(err) {
+    const outputElem = $('.js-output');
+    
+    const errMsg = (
+      `<p>We couldn't find a user with that screenname!`
+    );
+      
+    outputElem
+      .prop('hidden', false)
+      .html(errMsg);
+  }
 
 function renderResult(result) {
     const downloadLink = result.html_url + "/archive/master.zip";
@@ -66,13 +78,6 @@ function watchSubmit() {
         queryTarget.val("");
         getGitHubDataFromAPI(query, displayGitHubSearchData);
     });
-}
-
-function renderTweets(tweet) {
-    return `
-    <div class="twitter-result-box">
-        <h4>${tweet.title}</h4>
-    </div>`;
 }
 
 function initalizeApp() {
