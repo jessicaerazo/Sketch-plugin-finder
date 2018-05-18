@@ -4,22 +4,20 @@ const GITHUB_ENDPOINT = 'https://api.github.com/search/repositories?per_page=10&
 const TWITTER_SEARCH_ENDPOINT = 'https://api.twitter.com/1.1/search/tweets.json?q=sketch%20plugins&result_type=recent&count=3';
 const CORS_ANYWHERE_ENDPOINT ='https://cors-anywhere.herokuapp.com/';
 
-
 function renderTwitterResult(result) {
     return `
         <div class="twitter-result-box row js-twitter-result-box">
         <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">
-            <img src="${result.user.profile_image_url}" alt="" class="avatar">
+            <img src="${result.user.profile_image_url}" alt="profile image of${result.user.screen_name} " class="avatar">
         </a>
          <div class="profile-image-container"></div>
             <div class="tweet-feed">
-                <h4 class="user-name">
+                <h3 class="user-name">
                     <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">${result.user.name}</a>
-                </h4>
+                </h3>
                 <p class="tweet-msg">
                     <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">${result.text}</a>
                 </p>
-                <p class="date">${result.created_at}</p>
             </div> 
         </div>
    `;
@@ -49,7 +47,7 @@ function renderResult(result) {
         <div class="result-box">
             <h2 class="sketch-title">${result.name}</h2>
             <p class="sketch-description">${result.description}</p>
-            <p><a href="${downloadLink}" class="download-link">Download</a></p>
+            <p><a href="${downloadLink}" class="download-link" aria-label="download-plugin">Download</a></p>
         </div>
     </a>`;
 }

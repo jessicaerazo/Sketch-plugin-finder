@@ -136,12 +136,13 @@ main .download-link: focus {
     border-bottom: 1px solid #d8d8d8;
 }
 
-#twitter-section .twitter-section-heading h3{
+#twitter-section .twitter-section-heading h2{
+    font-size: 20px;
     padding: 0 0 15px 0;
     text-align: left;
 }
 
-#twitter-section .twitter-section-heading h3 > span {
+#twitter-section .twitter-section-heading h2 > span {
     color: #F96401;
 }
 
@@ -174,6 +175,10 @@ main .download-link: focus {
     text-align: left;
 }
 
+#twitter-section .twitter-result-box:last-child {
+    margin-bottom: 60px;
+}
+
 #twitter-section .avatar {
     height: 45px;
     border-radius: 50%;
@@ -181,7 +186,7 @@ main .download-link: focus {
     margin-bottom: 15px;
 }
 
-#twitter-section .twitter-result-box h4 {
+#twitter-section .twitter-result-box h3 {
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 15px;
@@ -200,9 +205,9 @@ main .download-link: focus {
 }
 
 footer {
-    background: #F8F8FB;
-    border-top: 1px solid #d8d8d8;
-    color: #959597;
+    background: #2F2F2F;
+    border-top: 1px solid #484848;
+    color: #FFF;
     width: 100%;
     height: 60px;
     position: fixed;
@@ -324,7 +329,7 @@ footer {
 
     #search-section  {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 
     #twitter-section .row {
@@ -338,8 +343,6 @@ footer {
         margin-right: 10px;
         padding: 40px 20px;
         text-align: left;
-        height: 360px;
-        
     }
     
     #twitter-section .twitter-result-box .user-name {

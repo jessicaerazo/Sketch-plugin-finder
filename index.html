@@ -19,12 +19,23 @@
             </header>
 
             <section role="region" id="search-section">
-                <form action="#" method="/" name="github-search" class="js-search-form">
+                <form action="#" method="/" name="github-search" class="js-search-form" >
                     <fieldset>
                         <legend>
                             <div class="input-container">
                                 <label for="query">Find a sketch plugin by category</label>
-                                <input type="text" class="js-query" placeholder="type colors, fonts" required>
+                                <input type="text" class="js-query" placeholder="type colors, fonts" id="query" list="categories" required>
+                                <datalist id="categories">
+                                    <option value="fonts">
+                                    <option value="colors">
+                                    <option value="layout">
+                                    <option value="measure">
+                                    <option value="padding">
+                                    <option value="swatches">
+                                    <option value="automate">
+                                    <option value="grids">
+                                    <option value="React">
+                                </datalist>
                                 <button type="submit">Search</button>
                             </div>
                         </legend>
@@ -37,7 +48,7 @@
             </main>
             <section role="region" id="twitter-section">
                 <div class="twitter-section-heading">
-                    <h3>Top recent Tweets for <span>Sketch Plugins</span></h3>
+                    <h2>Top recent Tweets for <span>Sketch Plugins</span></h2>
                 </div>
                 <div class="row js-twitter-results">
                     <!-- twitter results will load here -->
@@ -48,9 +59,7 @@
         <footer role="contentinfo">
             &copy; Jessica Erazo
         </footer>
-
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="js/moment.js"></script>
-        <script src="js/index.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html> 
