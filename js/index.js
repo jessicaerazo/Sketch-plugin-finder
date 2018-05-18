@@ -5,18 +5,20 @@ const TWITTER_SEARCH_ENDPOINT = 'https://api.twitter.com/1.1/search/tweets.json?
 const CORS_ANYWHERE_ENDPOINT ='https://cors-anywhere.herokuapp.com/';
 
 function renderTwitterResult(result) {
+    let profileUrlStr = result.user.profile_image_url;
+    let newProfileUrlStr = profileUrlStr.replace("http","https");
     return `
         <div class="twitter-result-box row js-twitter-result-box">
-        <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">
-            <img src="${result.user.profile_image_url}" alt="profile image of${result.user.screen_name} " class="avatar">
+        <a href="https://twitter.com/${result.user.screen_name}" target="blank" class="profile-url">
+            <img src="${newProfileUrlStr}" alt="profile image of${result.user.screen_name} " class="avatar">
         </a>
          <div class="profile-image-container"></div>
             <div class="tweet-feed">
                 <h3 class="user-name">
-                    <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">${result.user.name}</a>
+                    <a href="https://twitter.com/${result.user.screen_name}" target="blank" class="profile-url">${result.user.name}</a>
                 </h3>
                 <p class="tweet-msg">
-                    <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">${result.text}</a>
+                    <a href="https://twitter.com/${result.user.screen_name}" target="blank" class="profile-url">${result.text}</a>
                 </p>
             </div> 
         </div>
@@ -43,13 +45,17 @@ function getTwitterDataFromAPI(callback) {
 function renderResult(result) {
     const downloadLink = result.html_url + "/archive/master.zip";
     return `
-    <a href="${result.html_url}" target="blank">
         <div class="result-box">
-            <h2 class="sketch-title">${result.name}</h2>
-            <p class="sketch-description">${result.description}</p>
-            <p><a href="${downloadLink}" class="download-link" aria-label="download-plugin">Download</a></p>
+                <h2 class="sketch-title">
+                    <a href="${result.html_url}" target="blank">${result.name}</a>
+                </h2>
+                <p class="sketch-description">${result.description}</p>
+                <p>
+                    <a href="${downloadLink}" class="download-link" aria-label="download-plugin">Download</a>
+                </p>
+            
         </div>
-    </a>`;
+    `;
 }
 
 function displayGitHubSearchData(data) {

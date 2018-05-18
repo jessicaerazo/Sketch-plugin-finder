@@ -107,7 +107,12 @@ main a {
     text-decoration: none;
 }
 
-main .sketch-title,
+main .sketch-title a:link,
+main .sketch-description {
+    color: #000;
+}
+
+main .sketch-title>a:link,
 main .sketch-description {
     color: #000;
 }
