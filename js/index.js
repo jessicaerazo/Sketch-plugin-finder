@@ -1,21 +1,28 @@
 'use strict';
 
 const GITHUB_ENDPOINT = 'https://api.github.com/search/repositories?per_page=10&page=1&q=sketch%20plugin';
-const TWITTER_SEARCH_ENDPOINT = 'https://api.twitter.com/1.1/search/tweets.json?q=sketch%20plugin&result_type=recent&count=3';
+const TWITTER_SEARCH_ENDPOINT = 'https://api.twitter.com/1.1/search/tweets.json?q=sketch%20plugins&result_type=recent&count=3';
 const CORS_ANYWHERE_ENDPOINT ='https://cors-anywhere.herokuapp.com/';
 
 
 function renderTwitterResult(result) {
     return `
-    <div class="twitter-result-box row js-twitter-result-box">
-    <img src="${result.user.profile_image_url}" alt="" class="avatar">
-       <div class="profile-image-container"></div>
-        <div class="tweet">
-            <h4>${result.user.name}</h4>
-            <p>${result.text}</p>
-            <p class="date">${result.created_at}</p>
-        </div> 
-    </div>`;
+        <div class="twitter-result-box row js-twitter-result-box">
+        <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">
+            <img src="${result.user.profile_image_url}" alt="" class="avatar">
+        </a>
+         <div class="profile-image-container"></div>
+            <div class="tweet-feed">
+                <h4 class="user-name">
+                    <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">${result.user.name}</a>
+                </h4>
+                <p class="tweet-msg">
+                    <a href="https://twitter.com/${result.user.screen_name}" class="profile-url">${result.text}</a>
+                </p>
+                <p class="date">${result.created_at}</p>
+            </div> 
+        </div>
+   `;
 }
 
 function displayTwitterSearchData(data) {

@@ -16,22 +16,22 @@ body {
     padding: 0 20px;
 }
 
-header {
+#header {
     text-align: center;
 }
 
-header h1 {
+#header h1 {
     font-size: 30px;
     margin-top: 60px;
     margin-bottom: 40px;
 }
 
-header p {
+#header p {
     color: #505050;
     margin-bottom: 50px;
 }
 
-header img {
+#header img {
     width: 50%;
     margin-bottom: 100px;
 }
@@ -145,6 +145,18 @@ main .download-link: focus {
     color: #F96401;
 }
 
+#twitter-section .profile-url {
+    text-decoration: none;
+}
+#twitter-section a:link,
+#twitter-section a:visited,
+#twitter-section a:active,
+#twitter-section a:focus
+ {
+    color: #000;
+    text-decoration: none;
+}
+
 #twitter-section .row {
     display: flex;
     flex-direction: row;
@@ -160,11 +172,6 @@ main .download-link: focus {
     border-radius: 5px;
     padding: 30px;
     text-align: left;
-}
-
-#twitter-section .twitter-result-box:last-child {
-    margin-right: 0;
-    margin-bottom: 60px;
 }
 
 #twitter-section .avatar {
@@ -206,18 +213,18 @@ footer {
 
 /* Media Query */
 @media only screen and (min-width: 375px) {
-    header h1 {
+    #header h1 {
         font-size: 36px;
         margin-top: 80px;
         margin-bottom: 60px;
     }
     
-    header p {
+    #header p {
         color: #505050;
         margin-bottom: 50px;
     }
 
-    header img {
+    #header img {
         width: 60%;
         margin-bottom: 100px;
     }
@@ -233,18 +240,18 @@ footer {
         font-size: 18px;
     }
 
-    header h1 {
+    #header h1 {
         font-size: 40px;
         margin-top: 80px;
         margin-bottom: 60px;
     }
     
-    header p {
+    #header p {
         color: #505050;
         margin-bottom: 50px;
     }
 
-    header img {
+    #header img {
         width: 40%;
         margin-bottom: 100px;
     }
@@ -268,13 +275,13 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-    header h1 {
+    #header h1 {
         font-size: 32px;
         margin-top:40px;
         margin-bottom: 40px;
     }
     
-    header img {
+    #header img {
         width: 30%;
         margin-bottom: 100px;
     }
@@ -291,18 +298,18 @@ footer {
     
 }
 @media only screen and (min-width: 1024px) {
-    header h1 {
+    #header h1 {
         font-size: 45px;
         margin-top: 80px;
         margin-bottom: 40px;
     }
     
-    header p {
+    #header p {
         color: #505050;
         margin-bottom: 40px;
     }
 
-    header img {
+    #header img {
         width: 30%;
         margin-bottom: 40px;
     }
@@ -322,16 +329,36 @@ footer {
 
     #twitter-section .row {
         flex-wrap: nowrap;
+        margin-bottom: 60px;
     }
     
     #twitter-section .twitter-result-box {
         border: 1px solid #d8d8d8;
         border-radius: 5px;
-        margin-right: 15px;
-        padding: 40px 30px;
+        margin-right: 10px;
+        padding: 40px 20px;
         text-align: left;
-        height: 350px;
-    } 
+        height: 360px;
+        
+    }
+    
+    #twitter-section .twitter-result-box .user-name {
+        height: 24px;
+        width: 196px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #twitter-section .twitter-result-box .tweet-msg {
+        height: 190px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #twitter-section .twitter-result-box .date {
+        height: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 
