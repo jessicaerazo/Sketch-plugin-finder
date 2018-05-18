@@ -97,39 +97,43 @@ body {
     margin: 40px 0;
 }
 
-main .result-box {
+.search-results .result-box {
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     padding: 25px;
     margin: 25px 0;
 }
 
-main a {
+.search-results a {
     text-decoration: none;
 }
 
-main .sketch-title a:link,
-main .sketch-description {
+.search-results .sketch-title {
+    margin-bottom: 15px;
+}
+
+.search-results .sketch-title a:link,
+.search-results .sketch-description {
     color: #000;
 }
 
-main .sketch-title>a:link,
-main .sketch-description {
-    color: #000;
+.search-results .download-link {
+    margin-top: 15px;
+    background: #5B59E2;
+    border-radius: 5px;
+    padding: 12px 20px; 
+    display: block;
+    color: #FFF;
+    width: 125px;
 }
 
-main .download-link {
-    color: #5B59E2;
+.search-results .download-link:hover {
+    background: rgb(88, 88, 209);
 }
 
-main .download-link:hover {
-    color: rgb(104, 104, 247);
-}
-
-
-main .download-link:active,
-main .download-link: focus {
-    color: rgb(104, 104, 247);
+.search-results .download-link:active,
+.search-results .download-link: focus {
+    background: rgb(88, 88, 209);
 }
 
 /* Styling twitter section */
@@ -217,8 +221,8 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0;
-    /* right: 0;
-    left: 0; */
+    right: 0;
+    left: 0;
     text-align: center;
     padding: 1rem;
 }
@@ -244,7 +248,6 @@ footer {
     #search-section input[type="text"] {
         width: 72%;
     }
-    
 }
 
 @media only screen and (min-width: 414px) {

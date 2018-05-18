@@ -53,7 +53,6 @@ function renderResult(result) {
                 <p>
                     <a href="${downloadLink}" class="download-link" aria-label="download-plugin">Download</a>
                 </p>
-            
         </div>
     `;
 }
