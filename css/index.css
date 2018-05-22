@@ -64,33 +64,33 @@ body {
 }
 
 #header p {
-    color: #505050;
+    color: #000;
     margin-bottom: 50px;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-     -ms-animation: fadein 4s; /* Internet Explorer */
-      -o-animation: fadein 4s; /* Opera < 12.1 */
-         animation: fadein 4s;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
 }
 
 #header img {
     width: 50%;
     margin-bottom: 100px;
-    -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 5s; /* Firefox < 16 */
-     -ms-animation: fadein 5s; /* Internet Explorer */
-      -o-animation: fadein 5s; /* Opera < 12.1 */
-         animation: fadein 5s;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
 }
 
 #search-section  {
     text-align: center;
     margin-bottom: 100px;
-    -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 6s; /* Firefox < 16 */
-     -ms-animation: fadein 6s; /* Internet Explorer */
-      -o-animation: fadein 6s; /* Opera < 12.1 */
-         animation: fadein 6s;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
 }
 
 #search-section fieldset, 
@@ -106,11 +106,11 @@ body {
     margin-bottom: 25px;
     font-weight: 400;
     color: #5B59E2;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-     -ms-animation: fadein 4s; /* Internet Explorer */
-      -o-animation: fadein 4s; /* Opera < 12.1 */
-         animation: fadein 4s;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
 }
 
 #search-section input[type="text"] {
@@ -147,6 +147,10 @@ body {
 
 /* Autocomplete
 ----------------------------------*/
+.ui-helper-hidden-accessible{
+    display: none;
+}
+
 .ui-autocomplete { 
     position: absolute; cursor: default; 
 }       
@@ -181,7 +185,7 @@ body {
         width: 200px;
 }
 .ui-menu .ui-menu-item a {
-        text-decoration:none;
+        text-decoration: none;
         display: block;
         padding: 10px 0;
         line-height: 1.5;
@@ -194,13 +198,12 @@ body {
 
   #search-section button[type="submit"] {
     font-family: 'Open Sans', sans-serif;
-    color: #FFF;
+    color: #505050ß;
     font-size: 16px;
     height: 48px;
     padding: 0 5%;
     border-radius: 5px;
-    border: 1px solid #FFF;
-    background: #fd9800;
+    border: 1px solid #d8d8d8;
 }
 
 .search-results .fail-statement {
@@ -256,11 +259,11 @@ body {
 #twitter-section .twitter-section-heading {
     margin: 15px 0;
     border-bottom: 1px solid #d8d8d8;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-     -ms-animation: fadein 4s; /* Internet Explorer */
-      -o-animation: fadein 4s; /* Opera < 12.1 */
-         animation: fadein 4s;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
 }
 
 #twitter-section .twitter-section-heading h2{
@@ -300,11 +303,11 @@ body {
     border-radius: 5px;
     padding: 30px;
     text-align: left;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-     -ms-animation: fadein 4s; /* Internet Explorer */
-      -o-animation: fadein 4s; /* Opera < 12.1 */
-         animation: fadein 4s;
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+     -ms-animation: fadein 3s; /* Internet Explorer */
+      -o-animation: fadein 3s; /* Opera < 12.1 */
+         animation: fadein 3s;
 }
 
 #twitter-section .twitter-result-box:last-child {
@@ -346,7 +349,6 @@ body {
     }
     
     #header p {
-        color: #505050;
         margin-bottom: 50px;
     }
 
@@ -361,7 +363,7 @@ body {
 }
 
 @media only screen and (min-width: 414px) {
-    body{
+    body {
         font-size: 18px;
     }
 
@@ -372,7 +374,6 @@ body {
     }
     
     #header p {
-        color: #505050;
         margin-bottom: 50px;
     }
 
@@ -430,7 +431,6 @@ body {
     }
     
     #header p {
-        color: #505050;
         margin-bottom: 40px;
     }
 

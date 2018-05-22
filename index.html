@@ -23,8 +23,8 @@
                     <fieldset>
                         <legend>
                             <div class="input-container">
-                                <label for="query">Find a sketch plugin by category</label>
-                                <input type="text" class="js-query" placeholder="type colors, fonts" id="tags" list="categories" required>
+                                <label for="tags">Find a sketch plugin by category</label>
+                                <input type="text" id="tags" class="js-query" placeholder="type colors, fonts"  required>
                                 <button type="submit">Search</button>
                             </div>
                         </legend>
@@ -39,7 +39,7 @@
                 <div class="twitter-section-heading">
                     <h2>Top recent Tweets for <span>Sketch Plugins</span></h2>
                 </div>
-                <div class="row js-twitter-results">
+                <div class="row js-twitter-results" aria-live="polite">
                     <!-- twitter results will load here -->
                 </div>
             </section>
