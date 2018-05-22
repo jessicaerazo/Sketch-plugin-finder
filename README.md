@@ -4,9 +4,9 @@
 
 ## ScreenShots:
 
-![alt text](https://jessicaerazo.github.io/Sketch-App-plugin-search/css/images/Screenshot-1.png)
-![alt text](https://jessicaerazo.github.io/Sketch-App-plugin-search/css/images/Screenshot-2.png)
-![alt text](https://jessicaerazo.github.io/Sketch-App-plugin-search/css/images/Screenshot-3.png)
+![alt text](https://github.com/jessicaerazo/Sketch-plugin-finder/css/images/Screenshot-1.png)
+![alt text](https://github.com/jessicaerazo/Sketch-plugin-finder/css/images/Screenshot-2.png)
+![alt text](/css/images/Screenshot-3.png)
 
 
 ## Summary
