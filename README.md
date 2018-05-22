@@ -5,9 +5,9 @@
 <img src="css/images/Screenshot-1.png">
 <img src="css/images/Screenshot-2.png">
 <img src="css/images/Screenshot-3.png">
-![screenshot 1 of app](css/images/Screenshot-1.png)
-![screenshot 2 of app](css/images/Screenshot-2.png)
-![screenshot 3 of app](css/images/Screenshot-3.png)
+![](css/images/Screenshot-1.png)
+![](css/images/Screenshot-2.png)
+![](css/images/Screenshot-3.png)
 
 ## Summary
 
