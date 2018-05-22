@@ -4,8 +4,8 @@
 
 ## ScreenShots:
 
-![alt text](https://github.com/jessicaerazo/Sketch-plugin-finder/css/images/Screenshot-1.png)
-![alt text](https://github.com/jessicaerazo/Sketch-plugin-finder/css/images/Screenshot-2.png)
+![alt text](/css/images/Screenshot-1.png)
+![alt text](/css/images/Screenshot-2.png)
 ![alt text](/css/images/Screenshot-3.png)
 
 
