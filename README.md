@@ -4,9 +4,8 @@
 
 ## ScreenShots:
 
-<img src="css/images/Screenshot-1.png" border=0>
-<img src="css/images/Screenshot-2.png" border=0>
-<img src="css/images/Screenshot-3.png" border=0>
+![alt text](https://jessicaerazo.github.io/Sketch-App-plugin-search/css/images/Screenshot-1.png)>
+
 
 ## Summary
 
