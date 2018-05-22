@@ -59,13 +59,21 @@ body {
 
 #search-section input[type="text"] {
     width: 65%;
-    height: 40px;
+    height: 48px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding-left: 15px;
     border: 1px solid #d8d8d8;
     border-radius: 5px;
     box-shadow: 0;
+}
+
+/* #search-section input:focus {
+    outline: none;
+} */
+
+#search-section input:required {
+    box-shadow: none;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -81,14 +89,56 @@ body {
     color:#d8d8d8;
   }
 
+/* Autocomplete
+----------------------------------*/
+.ui-autocomplete { position: absolute; cursor: default; }       
+.ui-autocomplete-loading { background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat; }
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+/* Menu
+----------------------------------*/
+.ui-menu {
+        list-style: none;
+        padding: 20px 0;
+        margin: 0;
+        display: block;
+        width: 227px;
+        border: 1px solid #d8d8d8;
+        background: #FFF;
+        box-shadow: 0 10px 15px 0 rgba(0,0,0,.3);
+        border-radius: 0 0 5px 5px;
+}
+.ui-menu .ui-menu {
+        margin-top: -3px;
+}
+.ui-menu .ui-menu-item {
+        margin: 0;
+        padding: 10px 0 10px 15px;
+        width: 200px;
+}
+.ui-menu .ui-menu-item a {
+        text-decoration:none;
+        display: block;
+        padding: 10px 0;
+        line-height: 1.5;
+        zoom: 1;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+        margin: -1px;
+}
+
   #search-section button[type="submit"] {
     font-family: 'Open Sans', sans-serif;
-    color: #505050;
+    color: #FFF;
     font-size: 16px;
-    height: 40px;
+    height: 48px;
     padding: 0 5%;
     border-radius: 5px;
-    border: 1px solid #d8d8d8;
+    border: 1px solid #FFF;
+    background: #fd9800;
 }
 
 .search-results .fail-statement {
@@ -214,18 +264,6 @@ body {
     color: #505050;
 }
 
-footer {
-    background: #2F2F2F;
-    border-top: 1px solid #484848;
-    color: #FFF;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 1rem;
-}
 
 /* Media Query */
 @media only screen and (min-width: 375px) {

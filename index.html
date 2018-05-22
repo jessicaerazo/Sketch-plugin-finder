@@ -24,18 +24,7 @@
                         <legend>
                             <div class="input-container">
                                 <label for="query">Find a sketch plugin by category</label>
-                                <input type="text" class="js-query" placeholder="type colors, fonts" id="query" list="categories" required>
-                                <datalist id="categories">
-                                    <option value="fonts">
-                                    <option value="colors">
-                                    <option value="layout">
-                                    <option value="measure">
-                                    <option value="padding">
-                                    <option value="swatches">
-                                    <option value="automate">
-                                    <option value="grids">
-                                    <option value="React">
-                                </datalist>
+                                <input type="text" class="js-query" placeholder="type colors, fonts" id="tags" list="categories" required>
                                 <button type="submit">Search</button>
                             </div>
                         </legend>
@@ -55,11 +44,26 @@
                 </div>
             </section>
         </div><!-- closes .container -->
-
-        <footer role="contentinfo">
-            &copy; Jessica Erazo
-        </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script>
+                $( function() {
+                  var availableTags = [
+                    "fonts",
+                    "colors",
+                    "layout",
+                    "measure",
+                    "padding",
+                    "swatches",
+                    "automate",
+                    "grids",
+                    "React"
+                  ];
+                  $( "#tags" ).autocomplete({
+                    source: availableTags
+                  });
+                } );
+                </script>
     </body>
 </html> 
