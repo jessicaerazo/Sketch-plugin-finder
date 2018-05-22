@@ -2,7 +2,9 @@
 [See live version](https://jessicaerazo.github.io/Sketch-App-plugin-search/)
 
 ## ScreenShots:
-<img src="css/images/Screenshot-1.png" width="300">
+<img src="css/images/Screenshot-1.png">
+<img src="css/images/Screenshot-2.png">
+<img src="css/images/Screenshot-3.png">
 ![screenshot 1 of app](css/images/Screenshot-1.png)
 ![screenshot 2 of app](css/images/Screenshot-2.png)
 ![screenshot 3 of app](css/images/Screenshot-3.png)
