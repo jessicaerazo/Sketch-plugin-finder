@@ -1,6 +1,6 @@
 ## Sketch plugin finder
 
-[See live version](https://jessicaerazo.github.io/Sketch-App-plugin-search/)
+[See live version](https://jessicaerazo.github.io/Sketch-plugin-finder/)
 
 ## ScreenShots:
 
