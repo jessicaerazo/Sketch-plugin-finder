@@ -21,8 +21,7 @@ function renderTwitterResult(result) {
                     <a href="https://twitter.com/${result.user.screen_name}" target="blank" class="profile-url">${result.text}</a>
                 </p>
             </div> 
-        </div>
-   `;
+        </div>`;
 }
 
 function displayTwitterSearchData(data) {
@@ -90,7 +89,27 @@ function watchSubmit() {
     });
 }
 
+function allowJqueryAutoComplete() {
+    $( function() {
+        var availableTags = [
+          "fonts",
+          "colors",
+          "layout",
+          "measure",
+          "padding",
+          "swatches",
+          "automate",
+          "grids",
+          "React"
+        ];
+        $( "#tags" ).autocomplete({
+          source: availableTags
+        });
+      } );
+}
+
 function initalizeApp() {
+    allowJqueryAutoComplete();
     getTwitterDataFromAPI(displayTwitterSearchData);
     watchSubmit();
 }
