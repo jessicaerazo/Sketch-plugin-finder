@@ -4,9 +4,9 @@
 
 ## ScreenShots:
 
-<img src="css/images/Screenshot-1.png">
-<img src="css/images/Screenshot-2.png">
-<img src="css/images/Screenshot-3.png">
+<img src="css/images/Screenshot-1.png" border=0>
+<img src="css/images/Screenshot-2.png" border=0>
+<img src="css/images/Screenshot-3.png" border=0>
 
 ## Summary
 
