@@ -1,7 +1,7 @@
 'use strict';
 
 const GITHUB_ENDPOINT = 'https://api.github.com/search/repositories?per_page=10&page=1&q=sketch%20plugin';
-const TWITTER_SEARCH_ENDPOINT = 'https://api.twitter.com/1.1/search/tweets.json?q=sketch%20plugins&result_type=recent&count=3';
+const TWITTER_SEARCH_ENDPOINT = 'https://api.twitter.com/1.1/search/tweets.json?q=sketch%20plugins&result_type=recent&count=3&lang=en';
 const CORS_ANYWHERE_ENDPOINT ='https://cors-anywhere.herokuapp.com/';
 
 function renderTwitterResult(result) {
