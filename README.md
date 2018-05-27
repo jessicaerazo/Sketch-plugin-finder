@@ -3,7 +3,7 @@
 [See live version](https://jessicaerazo.github.io/Sketch-plugin-finder/)
 
 ## ScreenShots:
-[![Watch the video](/css/images/screenshots/screenshot-1.png)](/css/images/screenshots/screen-record.mp4)
+[![Watch the video](/css/images/screenshots/screenshot-1.png)](https://youtu.be/GLaP2eM4kj8)
 ![alt text](/css/images/screenshots/screenshot-1.png)
 ![alt text](/css/images/screenshots/screenshot-2.png)
 ![alt text](/css/images/screenshots/screenshot-3.png)
