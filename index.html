@@ -6,6 +6,7 @@
         <meta name="description" content="Best Sketch Plugins for designers and developers">
         <meta name="keywords" content="Sketch,Plugins,Designers,Web developers,fonts,icons,colors,layout,automation,organization,Sketch Plugin Finder,The Best Sketch Plugins">
         <meta name="author" content="Jessica Erazo">
+        <link rel="stylesheet" href="css/animate.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet">
         <title>Sketch Plugin Finder - The Best Sketch Plugins</title>
@@ -13,19 +14,27 @@
     <body>
         <div class="container">
             <header role="banner" id="header">
-                <h1>Sketch Plugins make Sketch better.</h1>
-                <p>Sketch is a digital design toolkit built to help you create your best work. Sketch plugins enable you to add more functionality.</p>
-                <img src="css/images/sketch.png" alt="sketch app">
+                <h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+                    Find plugins to power up your Sketch workflow
+                </h1>
+                <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">Sketch is a design app that let’s you create user interfaces, icons, and graphics. <a href="https://www.sketchapp.com/" target= "_blank">Learn more</a></p>
             </header>
+        </div><!-- closes .container -->
 
+            <section role="region" id="main-image">
+                <img src="css/images/Sketch-screen@2x.png"alt="sketch app screen shot"  class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0" >
+            </section>
+        
+        <div class="container">
             <section role="region" id="search-section">
-                <form action="#" method="/" name="github-search" class="js-search-form" >
+                <form action="#" method="/" name="github-search" class="js-search-form">
                     <fieldset>
                         <legend>
                             <div class="input-container">
-                                <label for="tags">Find a sketch plugin by category</label>
-                                <input type="text" id="tags" class="js-query" placeholder="type colors, fonts"  required>
-                                <button type="submit">Search</button>
+                                <label for="tags" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">Find a sketch plugin by category</label>
+                                <img src="css/images/search-icon@2x.png" alt="search icon" id="search-icon" class="wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s">
+                                <input type="text" id="tags" class="js-query wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s" placeholder="Type a keyword"  required>
+                                <button type="submit" class="js-query wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0s">Search</button>
                             </div>
                         </legend>
                     </fieldset>
@@ -35,15 +44,22 @@
             <main role="main" class="js-search-results search-results" aria-live="assertive">
                 <!-- github results will load here -->
             </main>
+
             <section role="region" id="twitter-section">
                 <div class="twitter-section-heading">
-                    <h2>Top recent Tweets for <span>Sketch Plugins</span></h2>
+                    <h2 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">Top recent Tweets for Sketch Plugin</h2>
                 </div>
-                <div class="row js-twitter-results" aria-live="polite">
+                <div class="row js-twitter-results twitter-results" aria-live="polite">
                     <!-- twitter results will load here -->
                 </div>
             </section>
         </div><!-- closes .container -->
+
+
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript" src="js/index.js"></script>

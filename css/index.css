@@ -9,133 +9,59 @@ body {
   font-weight: 400;
   font-size: 16px;
   position: relative;
+  background-image: url("images/background.png");
+  background-color: #FFF;
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1023px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 #header {
   text-align: center;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-/* Firefox < 16 */
-
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-/* Safari, Chrome and Opera > 12.1 */
-
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-/* Internet Explorer */
-
-@-ms-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-/* Opera < 12.1 */
-
-@-o-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 #header h1 {
   font-size: 30px;
-  margin-top: 60px;
+  font-weight: 600;
+  margin-top: 40px;
   margin-bottom: 40px;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
 }
 
 #header p {
-  color: #000;
-  margin-bottom: 50px;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
+  color: #747474;
+  margin-bottom: 40px;
 }
 
-#header img {
-  width: 50%;
-  margin-bottom: 100px;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
+#header p > a{
+  text-decoration: none;
+}
+
+#header p > a:link,
+#header p > a:hover,
+#header p > a:visited,
+#header p > a:focus {
+  text-decoration: none;
+  color: #8570FA;
+}
+
+#main-image img {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 #search-section {
   text-align: center;
   margin-bottom: 100px;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
+  position: relative;
 }
 
-#search-section fieldset, #search-section legend {
+#search-section fieldset, 
+#search-section legend {
   border: 0;
   margin: 0;
   padding: 0;
@@ -146,57 +72,71 @@ body {
   display: block;
   margin-bottom: 25px;
   font-weight: 400;
-  color: #424242;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
+  color: #000;
+}
+
+#search-section #search-icon {
+  width: 16px;
+  position: absolute;
+  bottom: 17px;
+  left: 20px;
+  z-index: 1;
 }
 
 #search-section input[type="text"] {
-  width: 65%;
-  height: 48px;
+  display: block;
+  width: 100%;
+  height: 50px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  padding-left: 15px;
-  border: 1px solid #d8d8d8;
-  border-radius: 5px;
-  box-shadow: 0;
+  padding-left: 46px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.10);
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.10);
+  border-radius: 100px;
+  margin: 0;
+  outline: none;
 }
 
-#search-section input:required {
-  box-shadow: none;
-}
-
-::-webkit-input-placeholder {
+#search-section ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #d8d8d8;
+  color: rgba(0,0,0,.20);
 }
 
- ::-moz-placeholder {
+#search-section ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #d8d8d8;
+  color: rgba(0,0,0,.20);
 }
 
- :-ms-input-placeholder {
+#search-section :-ms-input-placeholder {
   /* IE 10+ */
-  color: #d8d8d8;
+  color: rgba(0,0,0,.20);
 }
 
- :-moz-placeholder {
+#search-section :-moz-placeholder {
   /* Firefox 18- */
-  color: #d8d8d8;
+  color: rgba(0,0,0,.20);
+}
+
+#search-section button[type="submit"] {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #5A3DFA;
+  background: rgba(0,0,100,0);
+  -webkit-box-shadow: -1px 0px 0px 0px rgba(0,0,0,0.10); 
+  box-shadow: -1px 0px 0px 0px rgba(0,0,0,0.10);
+  height: 50px;
+  width: 105px; 
+  border: 0;
+  position: absolute;
+  bottom: 0;
+  right:0;
+  z-index: 1;
 }
 
 
-/* Autocomplete
-----------------------------------*/
-
+/* Autocomplete */
 .ui-helper-hidden-accessible {
   display: none;
 }
@@ -204,26 +144,21 @@ body {
 .ui-autocomplete {
   position: absolute;
   cursor: default;
+  margin: 0;
 }
 
 .ui-autocomplete-loading {
   background: white url('images/ui-anim_basic_16x16.gif') right center no-repeat;
 }
 
-
 /* workarounds */
-
 * html .ui-autocomplete {
   width: 1px;
+  margin: 0;
 }
-
-
 /* without this, the menu expands to 100% in IE6 */
 
-
-/* Menu
-----------------------------------*/
-
+/* Menu */
 .ui-menu {
   list-style: none;
   padding: 20px 0;
@@ -254,31 +189,36 @@ body {
   zoom: 1;
 }
 
-.ui-menu .ui-menu-item a.ui-state-hover, .ui-menu .ui-menu-item a.ui-state-active {
+.ui-menu .ui-menu-item a.ui-state-hover, 
+.ui-menu .ui-menu-item a.ui-state-active {
   margin: -1px;
 }
 
-#search-section button[type="submit"] {
-  font-family: 'Open Sans', sans-serif;
-  color: #505050ß;
-  font-size: 16px;
-  height: 48px;
-  padding: 0 5%;
-  border-radius: 5px;
-  border: 1px solid #d8d8d8;
+.search-results .fail-statement {
+  font-size: 36px;
+  font-weight: 600;
+  color: #999;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.search-results .fail-statement {
-  color: #999;
-  text-align: center;
-  margin: 40px 0;
+.search-results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .search-results .result-box {
-  border: 1px solid #d8d8d8;
-  border-radius: 5px;
-  padding: 25px;
-  margin: 25px 0;
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 8px;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.10);
+  padding: 20px;
+  margin-bottom: 15px;
+  position: relative;
 }
 
 .search-results a {
@@ -289,66 +229,88 @@ body {
   margin-bottom: 15px;
 }
 
-.search-results .sketch-title a:link, .search-results .sketch-description {
+.search-results .sketch-title a:link {
   color: #000;
 }
 
-.search-results .download-link {
-  margin-top: 15px;
-  background: #5B59E2;
-  border-radius: 5px;
-  padding: 12px 20px;
-  display: block;
-  color: #FFF;
+.search-results .sketch-description {
+  padding-bottom: 30px;
+  color: rgba(0,0,0,.70);
+  height: 94px;
+  margin-bottom: 40px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+}
+
+.search-results .download-btn {
   width: 125px;
+  background: #FFF;
+  color: #5A3DFA;
+  border: 1px solid rgba(0,0,0,.10);
+  border-radius: 93px;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 12px 0;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: ease;
 }
 
-.search-results .download-link:hover {
-  background: rgb(88, 88, 209);
+.search-results .result-box .cloud-icon {
+  width: 18px;
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
 }
 
-.search-results .download-link:active, .search-results .download-link: focus {
-  background: rgb(88, 88, 209);
+.search-results .download-btn a:link {
+  color: #5A3DFA;
+  display: inline-block;
+  margin-left: 40px;
 }
 
+.search-results .download-btn:hover,
+.search-results .download-btn:visited,
+.search-results .download-btn:focus {
+  background: #F1F1F1;
+}
 
 /* Styling twitter section */
-
 #twitter-section {
   margin-top: 40px;
 }
 
-#twitter-section .twitter-section-heading {
-  margin: 15px 0;
-  border-bottom: 1px solid #d8d8d8;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
+#twitter-section .twitter-results {
+  display: flex;
+  justify-content: center;
 }
 
 #twitter-section .twitter-section-heading h2 {
-  font-size: 20px;
-  padding: 0 0 15px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0,0,0,.30);
+  letter-spacing: 1px;
+  padding-bottom: 15px;
   text-align: left;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-#twitter-section .twitter-section-heading h2>span {
-  color: #F96401;
-}
-
-#twitter-section .profile-url {
+#twitter-section a:link {
   text-decoration: none;
 }
 
-#twitter-section a:link, #twitter-section a:visited, #twitter-section a:active, #twitter-section a:focus {
+#twitter-section .profile-url:link {
   color: #000;
-  text-decoration: none;
+}
+
+#twitter-section .profile-msg {
+  color: rgba(0,0,0,.70);
 }
 
 #twitter-section .row {
@@ -361,31 +323,25 @@ body {
 
 #twitter-section .twitter-result-box {
   width: 100%;
-  height: 310px;
-  border: 1px solid #d8d8d8;
-  border-radius: 5px;
-  padding: 30px;
+  background: #FFF;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 8px;
+  box-shadow: 0 1px 10px 0 rgba(0,0,0,0.10);
   text-align: left;
-  -webkit-animation: fadein 3s;
-  /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 3s;
-  /* Firefox < 16 */
-  -ms-animation: fadein 3s;
-  /* Internet Explorer */
-  -o-animation: fadein 3s;
-  /* Opera < 12.1 */
-  animation: fadein 3s;
+  padding: 20px 20px 0 20px;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
 }
 
 #twitter-section .twitter-result-box:last-child {
-  margin-bottom: 60px;
+  margin-right: 0;
 }
 
 #twitter-section .avatar {
-  height: 45px;
+  height: 30px;
   border-radius: 50%;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #twitter-section .twitter-result-box h3 {
@@ -394,10 +350,9 @@ body {
   margin-bottom: 15px;
 }
 
-#twitter-section .twitter-result-box p {
+#twitter-section .twitter-result-box .tweet-msg {
   font-weight: 400;
-  margin-bottom: 15px;
-  color: #1DA1F2;
+  margin-bottom: 30px;
 }
 
 #twitter-section .twitter-result-box .date {
@@ -407,125 +362,133 @@ body {
 }
 
 
-/* Media Query */
-
+/* Media Queries */
 @media only screen and (min-width: 375px) {
   #header h1 {
-    font-size: 36px;
-    margin-top: 80px;
+    font-size: 40px;
     margin-bottom: 60px;
   }
+
   #header p {
     margin-bottom: 50px;
   }
-  #header img {
-    width: 60%;
-    margin-bottom: 100px;
+
+  #main-image img {
+    width: 320px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
-  #search-section input[type="text"] {
-    width: 72%;
-  }
+
 }
 
 @media only screen and (min-width: 414px) {
-  body {
-    font-size: 18px;
-  }
   #header h1 {
-    font-size: 40px;
-    margin-top: 80px;
+    font-size: 45px;
+    font-weight: 600;
     margin-bottom: 60px;
   }
+
   #header p {
     margin-bottom: 50px;
   }
-  #header img {
-    width: 40%;
-    margin-bottom: 100px;
-  }
-  #search-section label {
+
+  #main-image img {
+    width: 414px;
     display: block;
-    margin-bottom: 25px;
-    font-weight: 400;
-    color: #5B59E2;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
-  #search-section input[type="text"] {
-    width: 72%;
-    font-size: 18px;
-  }
-  #search-section button[type="submit"] {
-    font-size: 18px;
-  }
+
 }
 
 @media only screen and (min-width: 768px) {
   #header h1 {
-    font-size: 32px;
-    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 600;
     margin-bottom: 40px;
   }
-  #header img {
-    width: 30%;
-    margin-bottom: 100px;
+
+  #main-image img {
+    width: 768px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
   }
-  #search-section input[type="text"] {
-    width: 81%;
+
+  #twitter-section .twitter-result-box {
+    padding: 20px 20px 0 20px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
   }
-  .search-results .fail-statement {
-    color: #999;
-    text-align: center;
-    margin: 80px 0;
+
+  #twitter-section .twitter-result-box .user-name {
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
+
 }
 
 @media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 7.5px;
+  }
+  
   #header h1 {
-    font-size: 45px;
-    margin-top: 80px;
-    margin-bottom: 40px;
+    font-size: 58px;
+    font-weight: 600;
   }
-  #header p {
-    margin-bottom: 40px;
-  }
-  #header img {
-    width: 20%;
-    margin-bottom: 40px;
-  }
-  #search-section input[type="text"] {
-    width: 83%;
-  }
-}
 
-@media only screen and (min-width: 1025px) {
-  #search-section {
-    text-align: center;
-    margin-bottom: 60px;
+  .search-results .result-box {
+    width: 331px;
+    margin-right: 7.5px;
   }
+  
+  .search-results .result-box:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .search-results .fail-statement {
+    color: #999;
+    display: block;
+    margin: 80px auto;
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  .search-results .sketch-description {
+    padding-bottom: 30px;
+    color: rgba(0,0,0,.70);
+    height: 120px;
+    margin-bottom: 40px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+  }
+
   #twitter-section .row {
     flex-wrap: nowrap;
-    margin-bottom: 60px;
   }
+
   #twitter-section .twitter-result-box {
-    border: 1px solid #d8d8d8;
-    border-radius: 5px;
-    margin-right: 10px;
-    padding: 40px 20px;
+    width: 336px;
+    margin-right: 7.5px;
+    background: #FFF;
+    border: 1px solid rgba(0,0,0,0.10);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.10);
+    border-radius: 8px;
     text-align: left;
+    padding: 20px 20px 0 20px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
   }
+
   #twitter-section .twitter-result-box .user-name {
-    height: 24px;
-    width: 196px;
-    overflow: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
   }
-  #twitter-section .twitter-result-box .tweet-msg {
-    height: 190px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  #twitter-section .twitter-result-box .date {
-    height: 24px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+
 }
+
+
