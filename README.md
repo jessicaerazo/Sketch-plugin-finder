@@ -4,7 +4,7 @@
 
 ## Watch Preview video:
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=GLaP2eM4kj8" target="_blank">
-<img src="/css/images/screenshots/screenshot-1.png" alt="screen capture of sketch finder" border="0" /></a>
+<img src="/css/images/screenshots/ss-1.png" alt="screen capture of sketch finder" border="0" /></a>
 
 ## ScreenShots:
 
